@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,7 +21,7 @@
     <div>
         <section class="principal-hero">
             <div class="esquerda">
-                <span class="subnome-principal"> —— Manutenção Residencial ——
+                <span class="subnome-principal"> Manutenção Residencial
                 </span>
                 <h1 class="nome-hero">é de casa.</h1>
                 <div class="carrossel-palavras">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="destaque-chamativo">
-                    <a class="ancora-hero" href="#">
+                    <a class="ancora-hero" href="#rodape">
                         <img src="img/arrow.svg" alt="setinha"></a>
                 </div>
             </div>
@@ -60,11 +60,12 @@
                         <div class="descricao-trabalho">
                             <div>
                                 <p>Da fundação aos acabamentos, cada intervenção é conduzida com técnica, precisão e
-                                    respeito ao projeto arquitetônico, preservando a estética e a integridade da residência.
+                                    respeito ao projeto arquitetônico, preservando a estética e a integridade da
+                                    residência.
                                 </p>
                                 <a href="#">Faça seu orçamento - já <span>&rightarrow;</span></a>
                             </div>
-                            <img src="img/pedreiro.png" alt="imagem representa materias de pedreiro">
+                            <img src="img/especialidades/pedreiro.jpg" alt="imagem representa materias de pedreiro">
                         </div>
                     </li>
                     <li>
@@ -82,7 +83,7 @@
                                 </p>
                                 <a href="#">Faça seu orçamento - já <span>&rightarrow;</span></a>
                             </div>
-                            <img src="img/pintor.jpg" alt="imagem representa materias de pintura">
+                            <img src="img/especialidades/pintor.jpg" alt="imagem representa materias de pintura">
                         </div>
                     </li>
                     <li>
@@ -100,7 +101,7 @@
                                 </p>
                                 <a href="#">Faça seu orçamento - já <span>&rightarrow;</span></a>
                             </div>
-                            <img src="img/eletricista.jpg" alt="imagem representa materias de pedreiro">
+                            <img src="img/especialidades/eletricista.jpg" alt="imagem representa materias de pedreiro">
                         </div>
                     </li>
                     <li>
@@ -112,13 +113,15 @@
                         </label>
                         <div class="descricao-trabalho">
                             <div>
-                                <p>Instalações, reparos e adequações hidráulicas realizados com precisão técnica, garantindo
-                                    eficiência, segurança e o perfeito funcionamento dos sistemas que sustentam o conforto
+                                <p>Instalações, reparos e adequações hidráulicas realizados com precisão técnica,
+                                    garantindo
+                                    eficiência, segurança e o perfeito funcionamento dos sistemas que sustentam o
+                                    conforto
                                     diário da residência.
                                 </p>
                                 <a href="#">Faça seu orçamento - já <span>&rightarrow;</span></a>
                             </div>
-                            <img src="img/encanamento.jpg" alt="imagem representa materias de pedreiro">
+                            <img src="img/especialidades/encanamento.jpg" alt="imagem representa materias de pedreiro">
                         </div>
                     </li>
                 </ul>
@@ -221,7 +224,7 @@
             </div>
             <div>
                 <p>Soluções complementares para o que realmente importa: Seu lar</p>
-                <a href="#">Solicitar agora <span>&rightarrow;</span></a>
+                <a href="#rodape">Solicitar agora <span>&rightarrow;</span></a>
             </div>
         </div>
         <div class="rodape-orcamento">
@@ -232,11 +235,33 @@
             </div>
             <div>
                 <p>Solicite seu atendimento em poucos minutos. <br>
-                    <span>O restante fica por nossa conta.</span></p>
+                    <span>O restante fica por nossa conta.</span>
+                </p>
             </div>
         </div>
     </section>
+    <footer id="rodape">
+        <section class="hero-rodape">
+            <section class="informacoes-contato">
+                <div class="titulo-rodape">
+                    <div class="logo-rodape"><img src="img/logo-P.png" alt="logo é de casa"></div>
+                    <h3>é de casa <br>serviços</h3>
+                </div>
+                <div>
+                    <span>Vamos conversar?</span>
+                    <p>Fale com a gente e resolva tudo com quem sabe do assunto</p>
+                </div>
+            </section>
 
+            <section class="mensagem">
+                <form action="">
+                    <label for="nome">Envie sua mensagem</label>
+                    <input placeholder="Seu nome" id="nome" name="nome" type="text">
+                    <textarea placeholder="Como podemos te ajudar? " name="mensagem" id="mensagem"></textarea>
+                </form>
+            </section>
+        </section>
+    </footer>
 </body>
 
 </html>

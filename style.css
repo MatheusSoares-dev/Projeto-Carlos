@@ -61,7 +61,7 @@ body {
 .direita {
     display: flex;
     justify-content: right;
-    background: url("img/wallpaper3.png");
+    background: url("img/Wallpaper-principal/wallpaper3.png");
     background-position: right .1px;
     background-size: 85rem;
     background-repeat: no-repeat;
@@ -83,9 +83,17 @@ body {
 }
 
 .subnome-principal {
-    color: #222;
+    color: black;
     font-style: italic;
+    font-family: var(--quick);
     animation: opacidade 3.2s ease;
+
+}
+
+.subnome-principal::after,
+.subnome-principal::before {
+    content: "————";
+    color: var(--orange);
 }
 
 .nome-hero {
@@ -166,7 +174,7 @@ body {
 }
 
 .ancora-hero::after {
-    content: "Veja mais";
+    content: "Entre em contato";
     position: absolute;
     top: 0;
     left: 2.7rem;
@@ -181,7 +189,7 @@ body {
 
 
 .ancora-hero:hover {
-    width: 8rem;
+    width: 12rem;
 }
 
 .ancora-hero:hover img {
@@ -956,6 +964,85 @@ input[type="checkbox"] {
         color: var(--orange);
     }
 }
+
+#rodape {
+    padding: 4rem 3rem;
+    width: 100%;
+    background: var(--inkblack);
+    color: var(--oak);
+}
+
+.informacoes-contato, .mensagem {
+    margin-bottom: 2rem;
+}
+
+.hero-rodape{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--dust);
+}
+
+.titulo-rodape {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3rem;
+    gap: 1rem;
+}
+
+.titulo-rodape h3{ 
+    font-size: 1.2rem;
+    font-family: var(--quick);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.logo-rodape{
+    width: 2.5rem;
+    overflow: hidden;
+}
+
+.logo-rodape img {
+    width: 100%;
+    scale: 2;
+}
+
+.informacoes-contato {
+    width: 50%;
+    border-right: 2px solid rgba(128, 128, 128, 0.534);
+}
+
+.informacoes-contato span {
+    position: relative;
+    font-size: .75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    left: 10px;
+}
+
+.informacoes-contato span::before {
+    content: "*";
+    position: relative;
+    color: var(--orangedark);
+    font-size: 1.8rem;
+    top: 9px;
+    right: 10px;
+}
+
+.informacoes-contato p {
+    padding-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 70%;
+}
+
+.informacoes-contato p::after {
+    content: ".";
+    font-size: 3rem;
+    color: var(--orange);
+}
+
+
 
 @keyframes rolagem {
     from {
