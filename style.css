@@ -378,7 +378,7 @@ input[type="checkbox"] {
 
 .servicos {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: var(--inkblack);
     color: var(--oak);
@@ -440,7 +440,7 @@ input[type="checkbox"] {
     height: 100%;
     animation: horizontal linear;
     animation-timeline: scroll(root);
-    animation-range: cover 70%;
+    animation-range: cover 54%;
     scroll-snap-type: x mandatory;
 }
 
