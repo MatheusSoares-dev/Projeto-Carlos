@@ -353,6 +353,7 @@ body {
     border: 3px solid var(--oak);
     color: var(--inkblack);
     font-weight: 700;
+
     span {
         font-weight: 700;
         transform: rotateZ(90deg);
@@ -449,7 +450,7 @@ input[type="checkbox"] {
     height: 100%;
     animation: horizontal linear;
     animation-timeline: scroll(root);
-    animation-range: cover 54%;
+    animation-range: 54%;
     scroll-snap-type: x mandatory;
 }
 
@@ -981,13 +982,14 @@ input[type="checkbox"] {
     color: var(--oak);
 }
 
-.informacoes-contato, .mensagem {
+.informacoes-contato,
+.mensagem {
     margin-bottom: 2rem;
 }
 
-.hero-rodape{
+.hero-rodape {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--dust);
 }
@@ -999,14 +1001,14 @@ input[type="checkbox"] {
     gap: 1rem;
 }
 
-.titulo-rodape h3{ 
+.titulo-rodape h3 {
     font-size: 1.2rem;
     font-family: var(--quick);
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.logo-rodape{
+.logo-rodape {
     width: 2.5rem;
     overflow: hidden;
 }
@@ -1021,7 +1023,7 @@ input[type="checkbox"] {
     border-right: 2px solid rgba(128, 128, 128, 0.534);
 }
 
-.informacoes-contato span {
+.subtitulo-rodape span {
     position: relative;
     font-size: .75rem;
     font-weight: 400;
@@ -1029,7 +1031,7 @@ input[type="checkbox"] {
     left: 10px;
 }
 
-.informacoes-contato span::before {
+.subtitulo-rodape span::before {
     content: "*";
     position: relative;
     color: var(--orangedark);
@@ -1038,20 +1040,59 @@ input[type="checkbox"] {
     right: 10px;
 }
 
-.informacoes-contato p {
+.subtitulo-rodape p {
     padding-top: 2rem;
     font-size: 2.5rem;
     font-weight: 700;
     width: 70%;
 }
 
-.informacoes-contato p::after {
+.subtitulo-rodape p::after {
     content: ".";
     font-size: 3rem;
     color: var(--orange);
 }
 
+.card-telefone{
+    display: flex;
+    
+    margin-top: 4rem;
+    padding: .6rem;
+    width: 50%;
+    gap: 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.534);
+}
 
+.icone-telefone{
+    background: var();
+    border: 1px solid rgba(128, 128, 128, 0.534);
+    border-radius:200%;
+    padding: .5rem;
+    height: 2.8rem;
+}
+
+.icone-telefone svg path {
+    fill: var(--orange);
+}
+
+.num-telefone {
+    display: flex;
+    gap: 2rem;
+}
+
+.info-tel {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--quick);
+    gap: 5px;
+    span {
+        color: ghostwhite;
+        font-weight: 600;
+        font-size: .7rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+}
 
 @keyframes rolagem {
     from {
