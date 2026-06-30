@@ -945,6 +945,7 @@ input[type="checkbox"] {
     gap: 3rem;
     width: 50%;
     border-right: 5px solid var(--orange);
+
     span {
         font-size: 3.5rem;
         font-weight: 400;
@@ -1052,56 +1053,73 @@ input[type="checkbox"] {
     color: var(--orange);
 }
 
-.card-telefone {
+.card-contato {
     display: flex;
-    margin-top: 4rem;
+    align-items: center;
+    margin-top: 1.5rem;
     padding: .6rem;
-    width: 17rem;
+    width: 22rem;
     gap: 1rem;
     border: 1px solid rgba(128, 128, 128, 0.534);
     border-radius: 16px;
+    cursor: pointer;
 }
 
-.card-telefone span {
-    font-size:1.5rem;
+.arrow {
+    display: inline-block;
+    font-size: 1.5rem;
     font-weight: 800;
     color: var(--orange);
+    transition: .6s ease;
 }
 
-.icone-telefone{
+.card-contato:hover {
+    .arrow {
+        transform: rotateZ(90deg);
+    }
+}
+
+.icone-telefone {
     background: var();
     border: 1px solid rgba(128, 128, 128, 0.534);
-    border-radius:200%;
+    border-radius: 200%;
     padding: .5rem;
-    height: 2.8rem;
+    height: 2.7rem;
+
 }
 
 .icone-telefone svg path {
     fill: var(--orange);
 }
 
-.num-telefone {
+.contato-div {
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.info-tel {
+.info-cont {
     display: flex;
     flex-direction: column;
     font-family: var(--quick);
     gap: 5px;
     span {
-        color: ghostwhite;
+        color: var(--orangedark);
         font-weight: 600;
-        font-size: .7rem;
+        font-size: .6rem;
         text-transform: uppercase;
         letter-spacing: 3px;
     }
 }
 
-.info-tel a {
-       
+.info-cont a {
+    text-decoration: none;
+    color: var(--oak);
+    font-family: var(--inter);
 }
+
+
 
 @keyframes rolagem {
     from {
