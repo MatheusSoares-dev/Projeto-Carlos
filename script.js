@@ -1,4 +1,4 @@
-const telefone = '5531987097928'
+const telefone = '5531973565413'
 
 function servico(botao) {
     const servico = botao.id
