@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right_altlocation_on" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>É de casa serviços</title>
+</head>
+
+<body>
+    <div class="inicio">
+        <img src="img/logo-P.png" alt="Logo E de casa">
+    </div>
+
+    <div>
+        <section class="principal-hero">
+            <div class="esquerda">
+                <span class="subnome-principal"> Manutenção Residencial
+                </span>
+                <h1 class="nome-hero">é de casa</h1>
+                <div class="carrossel-palavras">
+                    <p class="subinfo-hero">Seu lar merece </p>
+                    <div class="carrossel-titulos">
+                        <span class="palavras"></span>
+                        <span class="palavras">Cuidado</span>
+                        <span class="palavras">Atenção</span>
+                        <span class="palavras">Melhorias</span>
+                        <span class="palavras">Reparos</span>
+                        <span class="palavras">Reforma</span>
+                    </div>
+                </div>
+                <div class="destaque-chamativo">
+                    <a class="ancora-hero" href="#rodape">
+                        <img src="img/arrow.svg" alt="setinha"></a>
+                </div>
+            </div>
+            <div class="direita"></div>
+        </section>
+        <section class="corpo-tarefas">
+            <div class="especialidades">
+                <h1 class="tarefas-titulo">Nossas <br><span>especialidades.</span></h1>
+                <p>Intervenções precisas no seu lar com excelência técnica e acabamento impecável.</p>
+            </div>
+
+            <section class="tarefas">
+                <ul class="lista-tarefas">
+                    <li>
+                        <input type="checkbox" name="trabalho" id="primeiro">
+                        <label for="primeiro">
+                            <div class="nome-trabalho"><span>01</span>Pedreiro</div>
+                            <span class="info-trabalho">construções, reformas e acabamentos <span
+                                    class="setinha">&uparrow;</span></span>
+                        </label>
+                        <div class="descricao-trabalho">
+                            <div>
+                                <p>Da fundação aos acabamentos, cada intervenção é conduzida com técnica, precisão e
+                                    respeito ao projeto arquitetônico, preservando a estética e a integridade da
+                                    residência.
+                                </p>
+                                <button id="pedreiro" onclick="servico(this)">Faça seu orçamento - já
+                                    <span>&rightarrow;</span></button>
+                            </div>
+                            <img src="img/especialidades/pedreiro.jpg" alt="imagem representa materias de pedreiro">
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="trabalho" id="segundo">
+                        <label for="segundo">
+                            <div class="nome-trabalho"><span>02</span>Pintura</div>
+                            <span class="info-trabalho">Refinamento, valorização, estética <span
+                                    class="setinha">&uparrow;</span></span>
+                        </label>
+                        <div class="descricao-trabalho">
+                            <div>
+                                <p>Mais do que renovar paredes, nosso trabalho consiste em restaurar a atmosfera dos
+                                    ambientes, utilizando técnicas e materiais que elevam a percepção de conforto,
+                                    sofisticação e bem-estar.
+                                </p>
+                                <button id="pintura" onclick="servico(this)">Faça seu orçamento - já
+                                    <span>&rightarrow;</span></button>
+                            </div>
+                            <img src="img/especialidades/pintor.jpg" alt="imagem representa materias de pintura">
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="trabalho" id="terceiro">
+                        <label for="terceiro">
+                            <div class="nome-trabalho"><span>03</span>Eletricista</div>
+                            <span class="info-trabalho">Proteção, eficiência e tranquilidade
+                                <span class="setinha">&uparrow;</span></span>
+                        </label>
+                        <div class="descricao-trabalho">
+                            <div>
+                                <p>Projetos, instalações e adequações elétricas executados com rigor técnico, garantindo
+                                    segurança, eficiência energética e integração perfeita aos padrões contemporâneos de
+                                    conforto residencial.
+                                </p>
+                                <button id="eletricista" onclick="servico(this)">Faça seu orçamento - já
+                                    <span>&rightarrow;</span></button>
+                            </div>
+                            <img src="img/especialidades/eletricista.jpg" alt="imagem representa materias de pedreiro">
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="trabalho" id="quarto">
+                        <label for="quarto">
+                            <div class="nome-trabalho"><span>04</span>Encanamento</div>
+                            <span class="info-trabalho">Fluxo, eficiência e tranquilidade <span
+                                    class="setinha">&uparrow;</span></span>
+                        </label>
+                        <div class="descricao-trabalho">
+                            <div>
+                                <p>Instalações, reparos e adequações hidráulicas realizados com precisão técnica,
+                                    garantindo
+                                    eficiência, segurança e o perfeito funcionamento dos sistemas que sustentam o
+                                    conforto
+                                    diário da residência.
+                                </p>
+                                <button id="encanamento" onclick="servico(this)">Faça seu orçamento - já <span>&rightarrow;</span></button>
+                            </div>
+                            <img  src="img/especialidades/encanamento.jpg"
+                                alt="imagem representa materias de pedreiro">
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </div>
+
+    <div class="servicos">
+        <h1 class="cabeca-tarefas"><span>Atenção</span><br> aos detalhes</h1>
+        <p class="corpo-destaque">Modernizações e instalações técnicas realizadas com rigor profissional e acabamento
+            impecável. A precisão que seu projeto exige para transformar ideias em ambientes funcionais, elegantes e
+            duradouros.
+
+        </p>
+    </div>
+    <section class="servicos-horizontais">
+        <div class="sticky">
+            <div class="conjunto">
+                <div class="cards-moveis">
+                    <section class="hero-cards">
+                        <div class="title-moveis">
+                            <div>
+                                <h3 class="num">01</h3>
+                                <h3 class="name-cards">serviços</h3>
+                            </div>
+                            <a href="#">é de casa serviços</a>
+                        </div>
+                        <div class="hero-montagens">
+                            <h1>Montagem</h1>
+                            <p class="quant-montagens"><span>+2.500</span>Montagens<br>realizadas</p>
+                        </div>
+                        <div class="hero-corpo">
+                            <div class="hero-info">
+                                <p>
+                                    Precisão em cada detalhe para transformar seu móvel em funcionalidade e beleza
+                                </p>
+                                <a href="#">Solicitar orçamento <span>&rightarrow;</span></a>
+
+                                <h4>desde | 2000 | <img src="img/logo-P.png" alt=""></h4>
+                            </div>
+                            <img src="img/outros-servis/montagens_.png" alt="">
+                        </div>
+                    </section>
+                </div>
+                <div class="cards-cameras">
+                    <section class=" cameras hero-cards">
+                        <div class="title-camera">
+                            <div>
+                                <h3 class="num">02</h3>
+                                <h3 class="name-cards">serviços</h3>
+                            </div>
+                            <a href="#">é de casa serviços</a>
+                        </div>
+                        <div class="hero-camera">
+                            <div class="info-camera">
+                                <span>Instalações</span>
+                                <h1>Câmeras <br>de segurança</h1>
+                                <p>Mais proteção para o que realmente importa, instalação profissional com equipamentos
+                                    de qualidade</p>
+                                <div><a href="#">Solicitar orçamento <span>&rightarrow;</span></a></div>
+                            </div>
+                            <img src="img/outros-servis/camera_.png" alt="instalações de camera">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="carrossel">
+        <div class="carrossel-trabalho">
+            <div class="carrossel-simbolo"><span>✦</span></div>
+            <div class="carrossel-nome"><span>ELETRÉTICA</span></div>
+            <div class="carrossel-simbolo"><span>✦</span></div>
+            <div class="carrossel-nome"><span>PINTURA</span></div>
+            <div class="carrossel-simbolo"><span>✦</span></div>
+            <div class="carrossel-nome"><span>HIDRÁULICA</span></div>
+            <div class="carrossel-simbolo"><span>✦</span></div>
+            <div class="carrossel-nome"><span>MONTAGEM</span></div>
+            <div class="carrossel-simbolo"><span>✦</span></div>
+            <div class="carrossel-nome"><span>INSTALAÇÕES</span></div>
+        </div>
+        <div aria-hidden class="carrossel-trabalho">
+            <div class="carrossel-simbolo"><span>✦</span></div>
+            <div class="carrossel-nome"><span>ELETRÉTICA</span></div>
+            <div class="carrossel-simbolo"><span>✦</span></div>
+            <div class="carrossel-nome"><span>PINTURA</span></div>
+            <div class="carrossel-simbolo"><span>✦</span></div>
+            <div class="carrossel-nome"><span>HIDRÁULICA</span></div>
+            <div class="carrossel-simbolo"><span>✦</span></div>
+            <div class="carrossel-nome"><span>MONTAGEM</span></div>
+            <div class="carrossel-simbolo"><span>✦</span></div>
+            <div class="carrossel-nome"><span>INSTALAÇÕES</span></div>
+        </div>
+    </div>
+
+    <section class="sessao-orcamento">
+        <div class="texto-orca">
+            <div>
+                <h1>Simples para você, impecável para sua casa</h1>
+            </div>
+            <div>
+                <p>Soluções complementares para o que realmente importa: Seu lar</p>
+                <a href="#rodape">Solicitar agora <span>&rightarrow;</span></a>
+            </div>
+        </div>
+        <div class="rodape-orcamento">
+            <div class="passos-orc">
+                <h3><span>01</span><br> orçamento</h3>
+                <h1>/</h1>
+                <h3><span>02</span><br> Visita Técnica</h3>
+            </div>
+            <div>
+                <p>Solicite seu atendimento em poucos minutos. <br>
+                    <span>O restante fica por nossa conta.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer id="rodape">
+        <section class="hero-rodape">
+            <section class="informacoes-contato">
+                <div class="titulo-rodape">
+                    <div class="logo-rodape"><img src="img/logo-P.png" alt="logo é de casa"></div>
+                    <h3>é de casa <br>serviços</h3>
+                </div>
+                <div class="subtitulo-rodape">
+                    <span>Vamos conversar?</span>
+                    <p>Fale com a gente e resolva tudo com quem sabe do assunto</p>
+                </div>
+                <div class="card-contato">
+                    <div class="icone-telefone">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="27px" fill="#e3e3e3">
+                            <path
+                                d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
+                        </svg>
+                    </div>
+                    <div class="contato-div">
+                        <div class="info-cont">
+                            <span>Telefone</span>
+                            <a target="_blank" href="tel:+5531973565413">(31) 97356-5413</a>
+                        </div>
+                        <div class="arrow">
+                            <span>&rightarrow;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-contato">
+                    <div class="icone-telefone">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#e3e3e3">
+                            <path
+                                d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                        </svg>
+                    </div>
+                    <div class="contato-div">
+                        <div class="info-cont">
+                            <span>E-mail</span>
+                            <a target="_blank" href="mailto:carlosdaedecasa@gmail.com ">carlosdaedecasa@gmail.com</a>
+                        </div>
+                        <div class="arrow">
+                            <span>&rightarrow;</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mensagem">
+                <div class="fomulario-msg">
+                    <form onsubmit="enviarWhats(event)">
+                        <label for="nome">Envie sua mensagem</label>
+                        <input required placeholder="Seu nome" id="nome" name="nome" type="text">
+                        <textarea required placeholder="Como podemos te ajudar? " name="mensagem" id="mensagem"></textarea>
+                        <button type="submit">Envie sua mensagem <span class="material-symbols-outlined"> arrow_right_alt
+                            </span></button>
+                    </form>
+                    <div class="mapa">
+                        <h3>localização <span class="material-symbols-outlined">
+                                location_on
+                            </span></h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.555299147757!2d-43.9520408247736!3d-19.900991281480973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690aec3f437ff%3A0x253ff484387ceb0!2sR.%20do%20Murilo%2C%20471%20-%20Santo%20Andre%2C%20Belo%20Horizonte%20-%20MG%2C%2031230-221!5e0!3m2!1spt-BR!2sbr!4v1782865868328!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="divulgacao">
+            <div class="name-divulgacao">
+                <h1>é de casa serviços</h1>
+            </div>
+            <div class="info-rodape">
+                <p>&copy; 2026 É de casa Serviços. Todos os direitos reservados</p>
+                <p>Desenvolvido com cuidado por <a target="_blank" href="https://github.com/MatheusSoares-dev">Matheus
+                        Soares</a></p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
