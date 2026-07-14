@@ -1428,11 +1428,9 @@ input[type="checkbox"] {
 
 @media (max-width:768px) {
 
-    body {
-        overflow-x: hidden;
-    }
-
     .nome-hero {
+        max-width: 350px;
+        width: 100%;
         position: relative;
         left: 2rem;
         font-size: 9.5rem;
@@ -1579,7 +1577,7 @@ input[type="checkbox"] {
     }
 
     .hero-cards {
-        margin-left: 2rem;
+        margin-left:
     }
 
 
