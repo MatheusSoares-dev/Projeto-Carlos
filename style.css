@@ -1284,7 +1284,7 @@ input[type="checkbox"] {
     overflow: hidden;
     h1 {
         position: relative;
-        left: 15rem;
+        left: 8rem;
         width: 100%;
         text-transform: uppercase;
         font-family: var(--bosch);
