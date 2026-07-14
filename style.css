@@ -1661,6 +1661,7 @@ input[type="checkbox"] {
         flex-direction: column;
         text-align: center;
         gap: .8rem;
+        margin-left: .5px;
     }
 
     .info-rodape p,
