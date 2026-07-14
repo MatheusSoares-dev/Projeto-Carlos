@@ -1432,7 +1432,7 @@ input[type="checkbox"] {
         max-width: 350px;
         width: 100%;
         position: relative;
-        left: 2rem;
+        
         font-size: 9.5rem;
     }
 
@@ -1574,10 +1574,6 @@ input[type="checkbox"] {
         img {
             display: none;
         }
-    }
-
-    .hero-cards {
-        margin-left:
     }
 
 
