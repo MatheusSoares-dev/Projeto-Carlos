@@ -1428,9 +1428,14 @@ input[type="checkbox"] {
 
 @media (max-width:768px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     .nome-hero {
         position: relative;
-        left: 1rem;
+        left: 2rem;
+        font-size: 9.5rem;
     }
 
     .principal-hero {
@@ -1567,10 +1572,16 @@ input[type="checkbox"] {
 
     .hero-camera {
         flex-direction: column;
+        margin-left: 2rem;
         img {
             display: none;
         }
     }
+
+    .hero-cards {
+        margin-left: 2rem;
+    }
+
 
     .info-camera {
         
@@ -1621,10 +1632,15 @@ input[type="checkbox"] {
 
     .informacoes-contato,
     .mensagem {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
         margin: 0;
         border: none;
     }
+
+    
 
     .mensagem {
         padding: 0 2rem;
