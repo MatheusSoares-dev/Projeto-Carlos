@@ -1,3 +1,17 @@
+setTimeout(() => {
+    const telaIncio = document.querySelector('.inicio')
+
+    telaIncio.style.transition = 'opacity 0.4s ease'
+    telaIncio.style.opacity = '0'
+
+    setTimeout(() => {
+        telaIncio.remove()
+        document.body.classList.remove('travado')
+
+    },400)
+
+},1500)
+
 const telefone = '5531973565413'
 
 function servico(botao) {
