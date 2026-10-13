@@ -74,7 +74,7 @@ body {
 .direita {
     display: flex; 
     justify-content: right;
-    background: url("img/Wallpaper-principal/wallpaper-principal2.png");
+    background: url("img/Wallpaper-principal/wallpaper-teste.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
