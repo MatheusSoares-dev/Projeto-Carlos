@@ -72,7 +72,7 @@ body {
 }
 
 .direita {
-    display: flex;
+    display: flex; 
     justify-content: right;
     background: url("img/Wallpaper-principal/wallpaper-principal2.png");
     background-position: center;
